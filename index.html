@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="assets/atendimento-NPY9wK3S.jpg" fetchPriority="high"/><link rel="stylesheet" href="assets/styles-CdcXKg0T.css" data-precedence="default"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap" data-precedence="default"/><title>Portal Online | Cuidado e orientação para o público sênior</title><meta name="description" content="Conheça opções de planos de saúde para o público sênior. Solicite uma cotação e converse com nossa equipe pelo WhatsApp."/><meta property="og:title" content="Portal Online | Cuidado para cada fase da vida"/><meta property="og:description" content="Orientação independente sobre planos de saúde, cotações e atendimento para você e sua família."/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><link rel="modulepreload" href="assets/index-1ouwDkZ7.js"/><link rel="modulepreload" href="assets/routes-DUzNbB4i.js"/><link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+<style>
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+		transition: opacity var(--badge-transition-duration) var(--badge-transition-easing);
+	}
+
+	#lovable-badge.closing {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: baseline;
+		gap: var(--badge-gap);
+		box-sizing: border-box;
+		padding: 4px var(--badge-padding) 0;
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	/* The wordmark baseline sits at y=12 of the 16px logo; an empty 12px box
+	   makes that the flex baseline so the text aligns to it on any system font. */
+	#lovable-badge-logo {
+		position: relative;
+		display: block;
+		width: 52px;
+		height: 12px;
+	}
+
+	#lovable-badge-logo svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge,
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer src="~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="__l5e/events.4d3abd1f6b7321c2.js" data-artifact-kind="dwl_content_hash" data-artifact-id="d036ccfc6fe68c88d3af09f2841a3cfafebb49db0704d33a1deed9431e819263" data-commit-sha="5d147c1d51f1a776d069a2f66df17af722bd4ba3" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8yejhteTNmM2RuOWZuOTlndGdjMnMwa3NhNiIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiJkMDM2Y2NmYzZmZTY4Yzg4ZDNhZjA5ZjI4NDFhM2NmYWZlYmI0OWRiMDcwNGQzM2ExZGVlZDk0MzFlODE5MjYzIiwiY29tbWl0X3NoYSI6IjVkMTQ3YzFkNTFmMWE3NzZkMDY5YTJmNjZkZjE3YWY3MjJiZDRiYTMiLCJleHAiOjE3OTUwNzQwMTF9.WSuRQnuJosL86yPZYK7Fk7I8RLi0cJLBRJXp5ViOrHA"></script><meta name="twitter:title" content="Portal Online | Cuidado para cada fase da vida"><meta name="twitter:description" content="Orientação independente sobre planos de saúde, cotações e atendimento para você e sua família."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_2z8my3f3dn9fn99gtgc2s0ksa6/020811ee11cf9b0bd2b26cfe6c0b1aae_1792446518584.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_2z8my3f3dn9fn99gtgc2s0ksa6/020811ee11cf9b0bd2b26cfe6c0b1aae_1792446518584.png"></head><body><!--$--><a href="index.html#conteudo" class="skip-link">Pular para o conteúdo</a><header class="site-header" id="inicio"><div class="site-container header-inner"><a class="brand" href="index.html#inicio" aria-label="Portal Online — início"><span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg></span><div><div class="brand-title">Portal Online</div><div class="brand-subtitle">Orientação em planos de saúde</div></div></a><nav aria-label="Navegação principal" class="desktop-nav"><a href="index.html#inicio">Início</a><a href="index.html#servicos">Serviços</a><a href="index.html#agendamento">Agendamento</a><a href="index.html#suporte">Suporte</a><a href="index.html#contato">Contato</a></nav><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Falar agora</a></div></header><main id="conteudo"><section class="hero" aria-labelledby="hero-title"><img class="hero-photo" src="assets/atendimento-NPY9wK3S.jpg" width="1376" height="768" fetchPriority="high" alt="Profissional de saúde de jaleco branco e uniforme azul, sorrindo em uma clínica"/><div class="site-container hero-inner"><div class="hero-copy"><h1 id="hero-title">Portal Online</h1><p class="hero-subtitle">Sua saúde em boas mãos</p><p class="hero-description">Mais tranquilidade em cada fase da vida. Conheça opções de planos de saúde para o público sênior e receba orientação próxima para você e sua família.</p><div class="hero-actions"><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>2ª via de boleto</a><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-border bg-card text-primary hover:bg-secondary shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Agendamento</a><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-border bg-card text-primary hover:bg-secondary shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Falar com a equipe</a><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-border bg-card text-primary hover:bg-secondary shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Suporte</a></div><p class="trust-note"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>Atendimento pelo WhatsApp</p></div></div></section><section class="section" id="servicos"><div class="site-container"><p class="eyebrow">Como podemos ajudar</p><h2>Nossos serviços</h2><p class="section-intro">Orientação clara para comparar suas opções e escolher com mais segurança.</p><div class="service-grid"><article class="service-card"><div class="service-top"><span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-muted-foreground" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div><h3>Planos para o público sênior</h3><p>Atendimento dedicado a pessoas maduras, aposentados e suas famílias. Conheça a rede credenciada, as coberturas e as condições dos planos disponíveis.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary underline-offset-4 hover:underline h-auto p-0 text-xs font-semibold">2ª via de boleto <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="service-card"><div class="service-top"><span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-muted-foreground" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div><h3>Orientação para toda a família</h3><p>Converse sobre contratação, renovação e portabilidade de planos de saúde. Esclareça suas dúvidas e entenda cada opção antes de decidir.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary underline-offset-4 hover:underline h-auto p-0 text-xs font-semibold">Conhecer as opções <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article></div><h3 class="subheading">Oferecemos suporte com</h3><div class="option-grid"><article class="option-card"><span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-microscope" aria-hidden="true"><path d="M6 18h8"></path><path d="M3 22h18"></path><path d="M14 22a7 7 0 1 0 0-14h-1"></path><path d="M9 14h2"></path><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"></path><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"></path></svg></span><h3>Exames</h3><p>Orientamos o agendamento de exames na rede credenciada do seu plano e acompanhamos a liberação pelo WhatsApp.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar suporte <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="option-card"><span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-stethoscope" aria-hidden="true"><path d="M11 2v2"></path><path d="M5 2v2"></path><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path><path d="M8 15a6 6 0 0 0 12 0v-3"></path><circle cx="20" cy="10" r="2"></circle></svg></span><h3>Consultas</h3><p>Ajudamos você a marcar consultas com clínicos e especialistas da rede credenciada, no melhor horário para você.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar suporte <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="option-card"><span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 17.5v-11"></path></svg></span><h3>2ª via de boleto</h3><p>Solicite a 2ª via do boleto, confirme o pagamento da mensalidade e resolva pendências em poucos minutos.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar 2ª via <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="option-card"><span class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-life-buoy" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg></span><h3>SAC e atendimento</h3><p>Nosso SAC acompanha suas solicitações, esclarece dúvidas e cuida do que você precisar durante a vigência do plano.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer">Falar com o SAC <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article></div><p class="legal-note">Coberturas, valores, carências e elegibilidade dependem do produto e da operadora ou seguradora. Consulte a proposta e o contrato antes da contratação.</p></div></section><section class="section appointment" id="agendamento"><div class="site-container section-row"><div><p class="eyebrow">Converse com nossa equipe</p><h2>Um atendimento no seu tempo</h2><p class="section-intro">Solicite um horário para conversar sobre planos de saúde para você ou um familiar. Nossa equipe verifica a disponibilidade e confirma tudo pelo WhatsApp.</p><p class="legal-note">Agendamento de atendimento com nossa equipe. Oferecemos suporte para agendar consultas e exames pela rede credenciada do seu plano; não realizamos consultas médicas nem exames.</p></div><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Solicitar agendamento</a></div></section><section class="section" id="suporte"><div class="site-container support-grid"><div><p class="eyebrow">Atendimento próximo</p><h2>Conte com a nossa orientação.</h2><p class="section-intro">Estamos à disposição para dúvidas sobre cotações, contratação, renovação e portabilidade. Solicitações assistenciais devem ser encaminhadas à operadora responsável.</p><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Falar com o suporte</a></div><div class="about"><h3>Quem atende você</h3><p>O Portal Online é um canal de orientação independente sobre planos de saúde para o público sênior. Não é a central oficial de qualquer operadora.</p><ul><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Atendimento próximo e informações claras</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Condições apresentadas antes da contratação</li><li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Sem contratação automática pelo site</li></ul></div></div></section><section class="section contact" id="contato"><div class="site-container section-row"><div><p class="eyebrow">Fale com nossa equipe</p><h2>Vamos cuidar do seu próximo passo.</h2><p>WhatsApp: (11) 9582-58840</p></div><a href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm rounded-[5px] font-semibold min-h-11 px-5 py-3 text-xs"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg>Falar pelo WhatsApp</a></div></section></main><footer class="footer"><div class="site-container footer-inner"><span>Portal Online · Orientação independente em planos de saúde</span><span>São Paulo · Atendimento pelo WhatsApp</span></div></footer><a class="whatsapp-float" href="https://wa.me/5511958258840?text=Ol%C3%A1%2C%20quero%20atendimento" target="_blank" rel="noopener noreferrer" aria-label="Falar com o Portal Online pelo WhatsApp" title="Falar pelo WhatsApp"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"></path><path d="M8.5 7.5c-.5 0-1 1-1 1.7 0 2.6 3.7 6.2 6.4 6.2.7 0 1.8-.8 1.8-1.4l-2-1.2-.9.9c-1.5-.6-2.6-1.7-3.2-3.1l.8-.9-1.1-2.2Z"></path></svg></a><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--><script data-tsr-stream-part="">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-1ouwDkZ7.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-1ouwDkZ7.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-DUzNbB4i.js"]}}},matches:$R[10]=[$R[11]={i:"__root__ ",u:1792482011828,s:"success",ssr:!0},$R[12]={i:"  ",u:1792482011828,s:"success",ssr:!0}]})($R["tsr"]);$_TSR.e();{let s=document.currentScript,p;while((p=s.previousElementSibling)&&p.hasAttribute('data-tsr-stream-part'))p.remove();s.remove()}</script><script type="module" async="" src="assets/index-1ouwDkZ7.js"></script><script>document.currentScript.remove();/*$tsr-stream-boundary*/</script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/lovp_2z8my3f3dn9fn99gtgc2s0ksa6?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<span id="lovable-badge-logo"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+</span>
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
+<script>
+	(() => {
+		if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+			const badge = document.querySelector('#lovable-badge');
+			if (badge) {
+				badge.style.display = 'none';
+			}
+			return;
+		}
+
+		const closeButton = document.querySelector('#lovable-badge-close');
+		if (closeButton) {
+			closeButton.addEventListener('click', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				const badge = document.querySelector('#lovable-badge');
+				if (badge) {
+					badge.classList.add('closing');
+					setTimeout(function() {
+						if (badge) {
+							badge.style.display = 'none';
+						}
+					}, 240);
+				}
+			});
+		}
+	})();
+</script>
+</body></html>
